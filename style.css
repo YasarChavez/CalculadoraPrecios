@@ -34,14 +34,14 @@
   }
   
   input[type="number"] {
-    width: 80%;
+    width: 100%;
     padding: 2vw;
     margin-bottom: 2vw;
     font-size: 4vw;
   }
   
   button {
-    width: 80%;
+    width: 100%;
     padding: 2vw;
     background-color: #4CAF50;
     color: white;
@@ -49,10 +49,6 @@
     cursor: pointer;
     margin-top: 2vw;
     font-size: 4vw;
-  }
-  
-  button:hover {
-    background-color: #45a049;
   }
   
   p {
