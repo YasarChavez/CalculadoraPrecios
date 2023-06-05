@@ -1,90 +1,22 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-  }
-  
-  .calculator {
-    width: 90%;
-    max-width: 600px;
-    margin: 50px auto;
     padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  h1, h2 {
-    color: #333;
-  }
-  
-  .tab {
-    margin-bottom: 20px;
-  }
-  
-  .tab button {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-right: 5px;
-  }
-  
-  .tab button:hover {
-    background-color: #45a049;
-  }
-  
-  .tabcontent {
-    display: none;
-    text-align: left;
   }
   
   input[type="number"] {
-    padding: 5px;
     width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
   }
   
   button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px;
     background-color: #4CAF50;
-    color: #FFF;
+    color: white;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  button.limpiar {
-    background-color: #FF0000;
-  }
-  
-  p {
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  /* Estilos para dispositivos móviles */
-  @media (max-width: 600px) {
-    .calculator {
-      width: 100%;
-      margin: 20px auto;
-      padding: 10px;
-    }
-  
-    .tab button {
-      padding: 8px 16px;
-      font-size: 14px;
-    }
-  
-    button {
-      margin: 10px auto;
-      padding: 8px 16px;
-      font-size: 14px;
-    }
   }
   
