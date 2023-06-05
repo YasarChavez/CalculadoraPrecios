@@ -36,7 +36,7 @@
   input[type="number"] {
     width: 100%;
     padding: 2vw;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
     font-size: 4vw;
   }
   
@@ -47,7 +47,7 @@
     color: white;
     border: none;
     cursor: pointer;
-    margin-top: 2vw;
+    margin-top: 1vw;
     font-size: 4vw;
   }
   
