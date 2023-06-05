@@ -3,15 +3,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .container {
-    width: 100vw; /* Ajusta el ancho al 100% del viewport */
-    height: 100vh; /* Ajusta el alto al 100% del viewport */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 90%; /* Ajusta el ancho al 90% del body */
+    max-width: 400px;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -35,14 +34,14 @@ body {
   
   input[type="number"] {
     width: 100%;
-    max-width: 200px;
+    max-width: 100%;
     margin-bottom: 10px;
   }
   
   button {
     display: block;
     width: 100%;
-    max-width: 200px;
+    max-width: 100%;
     margin: 0 auto 10px;
     background-color: #4CAF50;
     color: #fff;
