@@ -1,18 +1,19 @@
 function calcularTotal() {
-    var valorKilo = document.getElementById("valorKilo").value;
-    var pesoTotal = document.getElementById("pesoTotal").value;
-    
-    var total = valorKilo * pesoTotal;
-    
-    document.getElementById("resultadoTotal").innerHTML = "El total es: " + total;
+    var precio = parseFloat(document.getElementById('precio').value);
+    var peso = parseFloat(document.getElementById('peso').value);
+  
+    var total = precio * peso / 1000;
+  
+    document.getElementById('resultadoTotal').innerText = 'Total: $' + total.toFixed(2);
   }
   
   function calcularCantidad() {
-    var valorKilo = document.getElementById("valorKilo2").value;
-    var valorTotal = document.getElementById("valorTotal").value;
-    
-    var cantidad = valorTotal / valorKilo;
-    
-    document.getElementById("resultadoCantidad").innerHTML = "La cantidad a entregar es: " + cantidad + " kilogramos o gramos";
+    var precio = parseFloat(document.getElementById('precio2').value);
+    var valorTotal = parseFloat(document.getElementById('valorTotal').value);
+  
+    var cantidadGramos = valorTotal * 1000 / precio;
+    var cantidadKilos = cantidadGramos / 1000;
+  
+    document.getElementById('resultadoCantidad').innerText = 'Cantidad: ' + cantidadGramos.toFixed(2) + ' gramos (' + cantidadKilos.toFixed(2) + ' kilogramos)';
   }
   
