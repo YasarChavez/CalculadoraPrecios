@@ -44,3 +44,22 @@ function openTab(evt, tabName) {
     openTab(event, document.getElementsByClassName('active')[0].id);
   });
   
+  // Desactivar reinicio automático de la página al abrir el teclado en dispositivos móviles
+  var focusedElementBeforeOpen;
+  
+  window.addEventListener('load', function() {
+    document.addEventListener('focusin', function(event) {
+      focusedElementBeforeOpen = event.target;
+    });
+  
+    document.addEventListener('focusout', function() {
+      focusedElementBeforeOpen = null;
+    });
+  
+    window.addEventListener('resize', function() {
+      if (document.activeElement === focusedElementBeforeOpen) {
+        focusedElementBeforeOpen.scrollIntoView();
+      }
+    });
+  });
+  

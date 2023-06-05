@@ -7,7 +7,6 @@ body {
   }
   
   .calculator {
-    max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     background-color: #f4f4f4;
@@ -73,7 +72,7 @@ body {
   
   @media (max-width: 600px) {
     .calculator {
-      margin: 20px auto;
+      margin: 20px 0;
       padding: 10px;
     }
   
