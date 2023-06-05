@@ -1,77 +1,58 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
+    background-color: #f9f9f9;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+    padding: 0;
   }
   
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+    text-align: center;
+    margin-top: 50px;
+    width: 90%;
+    max-width: 400px;
   }
   
   h1 {
-    text-align: center;
-    margin-top: 0;
-    width: 100%;
-  }
-  
-  h2 {
-    margin-top: 40px;
-    text-align: center;
-    width: 100%;
-  }
-  
-  label {
-    display: block;
-    width: 100%;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
   }
   
   input[type="number"] {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 60%;
+    padding: 5px;
+    margin-right: 10px;
   }
   
   button {
-    width: 100%;
-    margin: 0 auto 10px;
-  }
-  
-  button, input[type="number"] {
-    max-width: 400px;
+    padding: 10px;
     background-color: #4CAF50;
-    color: #fff;
+    color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
   }
   
   button:hover {
     background-color: #45a049;
   }
   
-  .button-clear {
-    background-color: #f44336;
-  }
-  
-  .button-clear:hover {
-    background-color: #d32f2f;
-  }
-  
   p {
-    text-align: center;
-    width: 100%;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  button.reset {
+    background-color: #e74c3c;
+    margin-left: 10px;
+  }
+  
+  button.reset:hover {
+    background-color: #c0392b;
   }
   
