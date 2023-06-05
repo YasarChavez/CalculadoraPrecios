@@ -14,7 +14,7 @@ function calcularTotal() {
     var cantidadGramos = valorTotal * 1000 / precio;
     var cantidadKilos = cantidadGramos / 1000;
   
-    document.getElementById('resultadoCantidad').innerText = 'Cantidad a Dar: ' + cantidadGramos.toFixed(2) + ' gramos (' + cantidadKilos.toFixed(2) + ' kilogramos)';
+    document.getElementById('resultadoCantidad').innerText = 'Cantidad a Entregar: ' + cantidadGramos.toFixed(2) + ' gramos (' + cantidadKilos.toFixed(2) + ' kilogramos)';
   }
   
   function limpiarCampos() {
