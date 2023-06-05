@@ -4,7 +4,7 @@ function calcularTotal() {
   
     var total = precio * peso / 1000;
   
-    document.getElementById('resultadoTotal').innerText = 'Total: $' + total.toFixed(2);
+    document.getElementById('resultadoTotal').innerText = 'Total a Cobrar: $' + total.toFixed(2);
   }
   
   function calcularCantidad() {
@@ -14,7 +14,7 @@ function calcularTotal() {
     var cantidadGramos = valorTotal * 1000 / precio;
     var cantidadKilos = cantidadGramos / 1000;
   
-    document.getElementById('resultadoCantidad').innerText = 'Cantidad: ' + cantidadGramos.toFixed(2) + ' gramos (' + cantidadKilos.toFixed(2) + ' kilogramos)';
+    document.getElementById('resultadoCantidad').innerText = 'Cantidad a Dar: ' + cantidadGramos.toFixed(2) + ' gramos (' + cantidadKilos.toFixed(2) + ' kilogramos)';
   }
   
   function limpiarCampos() {
