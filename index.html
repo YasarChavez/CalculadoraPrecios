@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Precios</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Calculadora de Precios</h1>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'totalTab')">Calcular el Total</button>
+      <button class="tablinks" onclick="openTab(event, 'cantidadTab')">Calcular la Cantidad</button>
+    </div>
+
+    <div id="totalTab" class="tabcontent">
+      <h2>Calcular el Total</h2>
+      <label for="kilo">Valor del Kilo:</label>
+      <input type="number" id="kilo">
+      <br>
+      <label for="peso">Peso Total (en gramos):</label>
+      <input type="number" id="peso">
+      <br>
+      <button onclick="calcularTotal()">Calcular</button>
+      <p id="total"></p>
+    </div>
+
+    <div id="cantidadTab" class="tabcontent">
+      <h2>Calcular la Cantidad</h2>
+      <label for="kilo2">Valor del Kilo:</label>
+      <input type="number" id="kilo2">
+      <br>
+      <label for="valor">Valor Total:</label>
+      <input type="number" id="valor">
+      <br>
+      <button onclick="calcularCantidad()">Calcular</button>
+      <p id="cantidad"></p>
+    </div>
+
+    <button onclick="limpiarCalculadora()">Limpiar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
