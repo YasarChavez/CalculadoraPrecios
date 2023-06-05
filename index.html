@@ -5,31 +5,33 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1>Calculadora de Peso y Valor</h1>
+  <div class="container">
+    <h1>Calculadora de Peso y Valor</h1>
 
-  <h2>Función 1: Calcular el Total</h2>
-  <div>
-    <label for="precio">Valor por kilo:</label>
-    <input type="number" id="precio">
-  </div>
-  <div>
-    <label for="peso">Peso total en gramos:</label>
-    <input type="number" id="peso">
-  </div>
-  <button onclick="calcularTotal()">Calcular Total</button>
-  <p id="resultadoTotal"></p>
+    <h2>Función 1: Calcular el Total</h2>
+    <div>
+      <label for="precio">Valor por kilo:</label>
+      <input type="number" id="precio">
+    </div>
+    <div>
+      <label for="peso">Peso total en gramos:</label>
+      <input type="number" id="peso">
+    </div>
+    <button onclick="calcularTotal()">Calcular Total</button>
+    <p id="resultadoTotal"></p>
 
-  <h2>Función 2: Calcular Cantidad</h2>
-  <div>
-    <label for="precio2">Valor por kilo:</label>
-    <input type="number" id="precio2">
+    <h2>Función 2: Calcular Cantidad</h2>
+    <div>
+      <label for="precio2">Valor por kilo:</label>
+      <input type="number" id="precio2">
+    </div>
+    <div>
+      <label for="valorTotal">Valor total:</label>
+      <input type="number" id="valorTotal">
+    </div>
+    <button onclick="calcularCantidad()">Calcular Cantidad</button>
+    <p id="resultadoCantidad"></p>
   </div>
-  <div>
-    <label for="valorTotal">Valor total:</label>
-    <input type="number" id="valorTotal">
-  </div>
-  <button onclick="calcularCantidad()">Calcular Cantidad</button>
-  <p id="resultadoCantidad"></p>
 
   <script src="script.js"></script>
 </body>
