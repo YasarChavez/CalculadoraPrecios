@@ -1,4 +1,8 @@
-body {
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
     background-color: #f9f9f9;
     display: flex;
     justify-content: center;
@@ -8,33 +12,42 @@ body {
     padding: 0;
   }
   
-  .container {
-    text-align: center;
-    margin-top: 50px;
-    width: 90%;
+  .calculator {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 400px;
+    width: 90%;
   }
   
   h1 {
     font-size: 2em;
     color: #333;
+    margin-top: 0;
     margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
   }
   
   input[type="number"] {
-    width: 60%;
+    width: 100%;
     padding: 5px;
-    margin-right: 10px;
+    margin-bottom: 10px;
   }
   
   button {
+    width: 100%;
     padding: 10px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
     margin-top: 10px;
-    width: 100%;
   }
   
   button:hover {
@@ -45,6 +58,7 @@ body {
     margin-top: 10px;
     font-size: 1em;
     color: #333;
+    text-align: center;
   }
   
   button.reset {
