@@ -10,7 +10,7 @@ body {
   
   .container {
     width: 90%; /* Ajusta el ancho al 90% del body */
-    max-width: 400px;
+    max-width: 100vw; /* Ajusta el max-width al 100% del viewport width */
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
