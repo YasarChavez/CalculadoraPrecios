@@ -17,7 +17,11 @@ function calcularTotal() {
     document.getElementById('resultadoCantidad').innerText = 'Cantidad: ' + cantidadGramos.toFixed(2) + ' gramos (' + cantidadKilos.toFixed(2) + ' kilogramos)';
   }
   
-  function limpiarResultados() {
+  function limpiarCampos() {
+    document.getElementById('precio').value = '';
+    document.getElementById('peso').value = '';
+    document.getElementById('precio2').value = '';
+    document.getElementById('valorTotal').value = '';
     document.getElementById('resultadoTotal').innerText = '';
     document.getElementById('resultadoCantidad').innerText = '';
   }

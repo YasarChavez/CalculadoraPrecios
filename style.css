@@ -3,15 +3,15 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
-    height: 100vh; /* Ajusta el alto del body al 100% del viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   .container {
-    width: 100%;
-    max-width: 400px;
+    width: 100vw; /* Ajusta el ancho al 100% del viewport */
+    height: 100vh; /* Ajusta el alto al 100% del viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
